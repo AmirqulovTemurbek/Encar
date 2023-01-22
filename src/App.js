@@ -1,16 +1,19 @@
+import {BrowserRouter, Route, Switch} from 'react-router-dom'; 
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import './App.css';
+import Korea from './components/Korea';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar/>
       <Switch>
-        <Route exact component={Home} />
+        <Route path="/home" exact component={Home} />
+        <Route path="/korea" exact component={Korea} />
+
       </Switch>
-    </Router>
+    </BrowserRouter>
   );
 }
 
