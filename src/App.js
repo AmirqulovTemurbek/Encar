@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Navbar/>
       <Switch>
-        <Route path="/home" exact component={Home} />
+        <Route path="/" exact component={Home} />
         <Route path="/korea" exact component={Korea} />
 
       </Switch>
